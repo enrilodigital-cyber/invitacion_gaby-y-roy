@@ -4,10 +4,12 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>35 Aniversario | Gaby & Roy</title>
+
+    <meta name="description"
+        content="Invitación al 35 aniversario de bodas de Gaby y Roy">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -15,67 +17,341 @@
 
 <body>
 
-    <!-- Pantalla de bienvenida -->
+    <!-- ========================= -->
+    <!-- MÚSICA -->
+    <!-- ========================= -->
+
+    <audio id="musica" loop>
+        <source src="assets/music/musica.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ========================= -->
+    <!-- BIENVENIDA -->
+    <!-- ========================= -->
 
     <section id="bienvenida">
 
-        <div class="overlay">
+        <div class="bienvenida-contenido fade">
 
-            <p class="frase">
-                Tenemos el honor de invitarte a celebrar nuestro
+            <p class="subtitulo">
+                Tenemos el honor de invitarte a celebrar
             </p>
 
-            <h2>
-                35 Aniversario
-            </h2>
+            <h1>35 Aniversario</h1>
 
-            <h3>
+            <h2>Gaby & Roy</h2>
+
+            <p class="detalle">
                 Bodas de Coral
-            </h3>
+            </p>
 
-            <h1>
-                Gaby & Roy
-            </h1>
+            <button id="btnEntrar">
 
-            <button id="abrir">
                 Abrir invitación
+
             </button>
 
         </div>
 
     </section>
 
-    <!-- Música -->
 
-    <audio id="musica" loop>
 
-        <source src="music.mp3" type="audio/mpeg">
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
 
-    </audio>
+    <header id="hero">
 
-    <!-- Contenido principal -->
+    <img src="assets/images/portada.jpg" alt="Gaby y Roy">
 
-    <main id="contenido">
+    <div class="hero-overlay">
 
-        <section class="proximamente">
+        <div class="hero-arriba">
+            <span class="hero-numero">35</span>
+            <span class="hero-aniversario">Aniversario</span>
+        </div>
 
-            <h2>
+        <h2>Gaby & Roy</h2>
 
-                Bienvenido
+        <div class="hero-coral">
+            <svg viewBox="0 0 64 64">
+                <path d="M32 58V20"/>
+                <path d="M32 36c-10-6-14-14-12-24"/>
+                <path d="M32 42c10-7 16-16 14-28"/>
+                <path d="M32 48c-8-2-15 0-22 7"/>
+                <path d="M32 50c8-4 15-3 22 3"/>
+            </svg>
 
-            </h2>
+            <span>Bodas de Coral</span>
 
-            <p>
+            <svg viewBox="0 0 64 64">
+                <path d="M32 58V20"/>
+                <path d="M32 36c-10-6-14-14-12-24"/>
+                <path d="M32 42c10-7 16-16 14-28"/>
+                <path d="M32 48c-8-2-15 0-22 7"/>
+                <path d="M32 50c8-4 15-3 22 3"/>
+            </svg>
+        </div>
 
-                En la siguiente fase comenzaremos a construir la invitación completa.
+        <p class="hero-fecha">18 de julio de 2026</p>
 
-            </p>
+        <div class="scroll">▼</div>
 
-        </section>
+    </div>
 
-    </main>
+</header>
 
-    <script src="assets/js/script.js"></script>
+
+
+    <!-- ========================= -->
+    <!-- CONTADOR -->
+    <!-- ========================= -->
+
+    <section id="contador">
+
+        <h2>Falta</h2>
+
+        <div class="contador-grid">
+
+            <div>
+
+                <span id="dias">00</span>
+
+                <p>Días</p>
+
+            </div>
+
+            <div>
+
+                <span id="horas">00</span>
+
+                <p>Horas</p>
+
+            </div>
+
+            <div>
+
+                <span id="minutos">00</span>
+
+                <p>Minutos</p>
+
+            </div>
+
+            <div>
+
+                <span id="segundos">00</span>
+
+                <p>Segundos</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- HISTORIA -->
+    <!-- ========================= -->
+
+    <section id="historia">
+
+        <h2>
+
+            Nuestra Historia
+
+        </h2>
+
+        <p>
+
+            Hace 35 años comenzamos un camino lleno de amor,
+            compañerismo y momentos inolvidables.
+
+            Hoy queremos compartir contigo este nuevo capítulo.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- EVENTO -->
+    <!-- ========================= -->
+
+    <section id="evento">
+
+    <h2>Detalles del Evento</h2>
+
+    <div class="card card-evento">
+
+        <div class="icono-evento iglesia-icono">
+            <svg class="line-icon" viewBox="0 0 64 64">
+                <path d="M32 8v10"/>
+                <path d="M26 14h12"/>
+                <path d="M14 56V30l18-12 18 12v26"/>
+                <path d="M24 56V42a8 8 0 0 1 16 0v14"/>
+                <path d="M20 34h8"/>
+                <path d="M36 34h8"/>
+            </svg>
+        </div>
+
+        <h3>Misa</h3>
+        <p>4:00 PM</p>
+        <p>Camerin Basílica de Ocotlán</p>
+
+    </div>
+
+    <div class="card card-evento">
+
+        <div class="icono-evento copas-icono">
+            <svg class="line-icon copa-izq" viewBox="0 0 64 64">
+                <path d="M22 8h16l-2 18a8 8 0 0 1-12 0L22 8z"/>
+                <path d="M30 34v16"/>
+                <path d="M22 56h16"/>
+            </svg>
+            <svg class="line-icon copa-der" viewBox="0 0 64 64">
+                <path d="M26 8h16l-2 18a8 8 0 0 1-12 0L26 8z"/>
+                <path d="M34 34v16"/>
+                <path d="M26 56h16"/>
+            </svg>
+        </div>
+
+        <h3>Recepción de invitados</h3>
+        <p>5:30 PM</p>
+        <p>Salón Los Señoríos</p>
+
+    </div>
+
+    <div class="card vestimenta-card">
+
+        <h3>Código de vestimenta</h3>
+
+        <p class="vestimenta-principal">Formal</p>
+
+        <div class="vestimenta-item">
+            <span>
+    <svg class="dress-icon" viewBox="0 0 64 64">
+        <path d="M25 10h14l3 12-6 6 10 26H18l10-26-6-6z"/>
+        <path d="M25 10c2 5 12 5 14 0"/>
+    </svg>
+</span>
+            <p>Mujeres: no vestido color rosa, fiusha ni coral.</p>
+        </div>
+
+        <div class="vestimenta-item">
+            <span>
+    <svg class="suit-icon" viewBox="0 0 64 64">
+        <path d="M22 10h20l6 12v32H16V22z"/>
+        <path d="M26 10l6 12 6-12"/>
+        <path d="M32 22v32"/>
+        <path d="M26 30h4"/>
+        <path d="M34 30h4"/>
+    </svg>
+</span>
+            <p>Hombres: no traje gris claro ni gris oscuro.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ========================= -->
+    <!-- MAPAS -->
+    <!-- ========================= -->
+
+    <section id="mapas">
+
+    <h2>Cómo llegar</h2>
+
+    <a href="https://maps.app.goo.gl/9vkjyd5mjs9wzRwTA" target="_blank">
+        Ver ubicación de la Basílica
+    </a>
+
+    <a href="https://maps.app.goo.gl/GD7nPbHLHWRSDKCT7" target="_blank">
+        Ver ubicación del Salón
+    </a>
+
+</section>
+
+
+
+    <!-- ========================= -->
+    <!-- GALERÍA -->
+    <!-- ========================= -->
+
+    <section id="galeria">
+
+        <h2>
+
+            Galería
+
+        </h2>
+
+        <div class="galeria-carrusel">
+
+            <img src="assets/images/galeria/foto1.jpg" alt="">
+            <img src="assets/images/galeria/foto2.jpg" alt="">
+            <img src="assets/images/galeria/foto3.jpg" alt="">
+            <img src="assets/images/galeria/foto4.jpg" alt="">
+            <img src="assets/images/galeria/foto5.jpg" alt="">
+            <img src="assets/images/galeria/foto6.jpg" alt="">
+            <img src="assets/images/galeria/foto7.jpg" alt="">
+            <img src="assets/images/galeria/foto8.jpg" alt="">
+            <img src="assets/images/galeria/foto9.jpg" alt="">
+            <img src="assets/images/galeria/foto10.jpg" alt="">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- CONFIRMACIÓN -->
+    <!-- ========================= -->
+
+    <section id="confirmacion">
+
+        <h2>
+
+            Confirma tu asistencia
+
+        </h2>
+
+        <a
+            href="https://wa.me/522461220651"
+            target="_blank">
+
+            Confirmar por WhatsApp
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- FINAL -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <h2>
+
+            Gracias por ser parte de nuestra historia.
+
+        </h2>
+
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
 
