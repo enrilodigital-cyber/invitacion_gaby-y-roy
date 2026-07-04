@@ -1095,15 +1095,15 @@ section{
 }
 
 .hero-numero{
-    font-family:'Bodoni Moda', serif;
+    font-family:'Lora', serif;
     font-size:5.8rem;
     line-height:.8;
-    font-weight:700;
+    font-weight:400;
     color:#F2E6D0;
 }
 
 .hero-aniversario{
-    font-family:'Bodoni Moda',serif;
+    font-family:'Lora',serif;
     font-size:2.1rem;
     color:#F2E6D0;
     font-style:italic;
@@ -1137,7 +1137,7 @@ section{
 
     color:#F2E6D0;
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Lora',serif;
 
     font-size:1.7rem;
 
